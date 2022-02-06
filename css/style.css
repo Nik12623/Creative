@@ -16,6 +16,8 @@ h6 {
   margin: 0;
 }
 
+/* Header */
+
 header {
   width: 100%;
   position: absolute;
@@ -51,6 +53,7 @@ header {
 }
 
 .header-actions a {
+  text-decoration: none;
   display: inline-block;
   font-weight: normal;
   font-size: 16px;
@@ -87,6 +90,10 @@ header {
   background-color: #181818;
   transition: background-color 0.2s linear, color 0.2s linear;
 }
+
+/* Header */
+
+/* Intro */
 
 .intro {
   background-image: url(../images/intro.jpg);
@@ -140,3 +147,5 @@ header {
   background-color: #181818;
   transition: background-color 0.2s linear, color 0.2s linear;
 }
+
+/* Intro */
