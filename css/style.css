@@ -1,0 +1,142 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+h3,
+h5,
+h6 {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding-top: 31px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-article,
+.header-layout,
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 22px;
+}
+
+.header-layout p {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.header-actions a {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.header-actions {
+  padding: 0;
+}
+
+.header-actions li {
+  list-style-type: none;
+  margin: 0 11.5px 0 11.5px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 7px 13px;
+}
+
+.header-actions li:first-child {
+  border-radius: 15px;
+  padding: 7px 27px;
+  margin-left: 0;
+}
+
+.header-actions li:last-child {
+  margin-right: 0;
+  padding: 7px 11px;
+}
+
+.header-actions li:hover {
+  color: #ffffff;
+  background-color: #181818;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.intro {
+  background-image: url(../images/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.intro-content {
+  max-width: 560px;
+  padding: 344px 0 309px 0;
+}
+
+.intro-content h1 {
+  font-weight: normal;
+  font-size: 55px;
+  line-height: 100%;
+  color: #181818;
+  margin-bottom: 30px;
+}
+
+.intro-content p {
+  font-size: 34px;
+  line-height: 110%;
+  color: #181818;
+  margin-bottom: 65px;
+}
+
+.intro-content a {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #181818;
+  text-decoration: none;
+  padding: 23px 47px;
+  background: #ffffff;
+  border-radius: 40px;
+}
+
+.intro-content a {
+  margin-right: 20px;
+}
+
+.intro-content a:last-child {
+  margin-right: 0;
+}
+
+.intro-content a:hover {
+  color: #ffffff;
+  background-color: #181818;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
