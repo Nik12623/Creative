@@ -30,8 +30,8 @@ header {
   margin: 0 auto;
 }
 
-.header-article,
-.header-layout,
+.header-item,
+.header-inner,
 .header-actions {
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ header {
   margin-right: 22px;
 }
 
-.header-layout p {
+.header-inner p {
   font-weight: normal;
   font-size: 15px;
   line-height: 19px;
