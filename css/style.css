@@ -14,6 +14,7 @@ h3,
 h5,
 h6 {
   margin: 0;
+  padding: 0;
 }
 
 /* Header */
@@ -45,47 +46,52 @@ header {
   margin-right: 22px;
 }
 
-.header-item p {
+.logo-text {
   font-weight: normal;
   font-size: 15px;
   line-height: 19px;
   color: #ffffff;
 }
 
-.header-actions a {
-  text-decoration: none;
-  display: inline-block;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 140%;
-  color: #ffffff;
-}
-
-.header-actions {
-  padding: 0;
-}
-
 .header-actions li {
   list-style-type: none;
   margin: 0 11.5px 0 11.5px;
-  cursor: pointer;
+}
+
+.action-link {
+  display: inline-block;
   border: 1px solid #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.social {
+  height: 36px;
+  width: 36px;
   border-radius: 50%;
-  padding: 7px 13px;
+  text-align: center;
+  padding: 10px 10px;
+  line-height: 16px;
+}
+
+.number {
+  border-radius: 15px;
+  padding: 7px 27px;
+  line-height: 140%;
 }
 
 .header-actions li:first-child {
-  border-radius: 15px;
-  padding: 7px 27px;
   margin-left: 0;
 }
 
 .header-actions li:last-child {
   margin-right: 0;
-  padding: 7px 11px;
 }
 
-.header-actions li:hover {
+.action-link:hover {
   color: #ffffff;
   background-color: #181818;
   transition: background-color 0.2s linear, color 0.2s linear;
@@ -115,14 +121,15 @@ header {
   margin-bottom: 30px;
 }
 
-.intro-content p {
+.intro-subtitle {
   font-size: 34px;
   line-height: 110%;
   color: #181818;
   margin-bottom: 65px;
 }
 
-.intro-content a {
+.btn {
+  text-decoration: none;
   display: inline-block;
   font-weight: normal;
   font-size: 18px;
@@ -132,17 +139,14 @@ header {
   padding: 23px 47px;
   background: #ffffff;
   border-radius: 40px;
-}
-
-.intro-content a {
   margin-right: 20px;
 }
 
-.intro-content a:last-child {
+.btn:last-child {
   margin-right: 0;
 }
 
-.intro-content a:hover {
+.btn:hover {
   color: #ffffff;
   background-color: #181818;
   transition: background-color 0.2s linear, color 0.2s linear;
