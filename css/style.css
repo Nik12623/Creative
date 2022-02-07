@@ -106,11 +106,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  padding: 344px 0 309px 0;
 }
 
 .intro-content {
   max-width: 560px;
-  padding: 344px 0 309px 0;
 }
 
 .intro-title {
