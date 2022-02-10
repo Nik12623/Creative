@@ -106,11 +106,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  padding: 344px 0 309px 0;
-}
-
-.intro-content {
-  max-width: 560px;
+  padding: 344px 0 0 0;
 }
 
 .intro-title {
@@ -153,3 +149,147 @@ header {
 }
 
 /* Intro */
+
+/* Style */
+
+.style {
+  padding: 70px 0 133px 0;
+}
+
+.style-inner {
+  padding-bottom: 141px;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+  font-family: 20 Kopeek Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 110%;
+  color: #181818;
+}
+
+.style-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.style-img {
+  margin-right: 30px;
+  display: block;
+}
+
+.text {
+  font-family: 20 Kopeek;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #181818;
+}
+
+.text-style {
+  margin-top: -10px;
+}
+
+.text-style p:first-child {
+  margin-bottom: 75px;
+}
+
+/* Style */
+
+/* Elements */
+
+.title {
+  font-family: 20 Kopeek Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 55px;
+  line-height: 100%;
+  color: #181818;
+}
+
+.elements-inner {
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 120px;
+}
+
+.item-one {
+  margin-right: 67px;
+  display: flex;
+}
+.item-two {
+  margin-right: 43px;
+  display: flex;
+}
+.item-three {
+  margin-right: 28px;
+  display: flex;
+}
+.item-four {
+  margin-right: 90px;
+  display: flex;
+}
+
+.item-five {
+  display: flex;
+  margin-right: 60px;
+}
+
+.elemenents-subtitle {
+  margin-top: 28px;
+}
+
+.elemenents-title {
+  margin-right: 8px;
+  font-family: 20 Kopeek Book;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 55px;
+  line-height: 100%;
+  color: #181818;
+}
+
+.elements-content {
+  display: block;
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 19px;
+  margin-right: 50px;
+}
+
+/* Elements */
+
+/* Price */
+
+.price-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.price-text {
+  margin: 55px 82px 0 0;
+}
+
+.price-img {
+  display: block;
+}
+
+.price-text p:first-child {
+  margin-bottom: 20px;
+}
+
+.price-text span {
+  display: block;
+  margin-top: 20px;
+  color: #ffffff;
+  background: #2b59c3;
+  border-radius: 5px;
+  padding: 11px 13px;
+  position: relative;
+  left: -13px;
+  bottom: 0;
+}
+
+/* Price */
