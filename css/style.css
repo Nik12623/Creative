@@ -23,7 +23,7 @@ ul,
 h1,
 h2,
 h3,
-h3,
+h4,
 h5,
 h6 {
   margin: 0;
@@ -231,20 +231,16 @@ header {
 
 .item-one {
   margin-right: 104px;
-  display: flex;
   margin-left: 32px;
 }
 .item-two {
   margin-right: 80px;
-  display: flex;
 }
 .item-three {
   margin-right: 65px;
-  display: flex;
 }
 .item-four {
   margin-right: 127px;
-  display: flex;
 }
 
 .item-five {
@@ -383,16 +379,16 @@ header {
   margin-bottom: 11px;
 }
 
-.form-text {
+.middle-text {
   font-family: "20 Kopeek", sans-serif;
   font-weight: normal;
   font-size: 26px;
   line-height: 110%;
   color: #181818;
-  margin-bottom: 27px;
 }
 
 .form-flex {
+  margin-top: 27px;
   display: flex;
   margin-bottom: 21px;
 }
@@ -432,7 +428,7 @@ header {
   display: none;
 }
 
-.form-flex button {
+.form button {
   cursor: pointer;
   border: 0;
 }
@@ -474,3 +470,163 @@ header {
 /* Form */
 
 /* Brand */
+
+/* Stages */
+
+.stages-inner {
+  padding-bottom: 150px;
+}
+
+.stages-inner h2 {
+  margin-bottom: 85px;
+  max-width: 40%;
+}
+
+.stages-item {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.stages-item:last-child {
+  margin-bottom: 0;
+}
+
+.stages-col {
+  margin-right: 30px;
+  width: 20%;
+}
+
+.firsr-col {
+  margin-right: 97px;
+  width: 37%;
+}
+
+.stages-col img {
+  margin-bottom: 32px;
+}
+
+.stages-col:last-child {
+  margin-right: 130px;
+  width: 23%;
+}
+
+.stages-content {
+  font-family: "20 Kopeek", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #181818;
+  margin-top: 15px;
+}
+
+/* Element-two */
+
+.elements_two-inner {
+  display: flex;
+}
+
+.element-two {
+  background-image: url(../images/elements-two.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 282px 0 0 0;
+  height: 100vh;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.element {
+  margin-right: 65px;
+  color: #ffffff;
+  width: 20%;
+}
+
+.element span {
+  color: #ffffff;
+}
+
+.elements_two-inner div:first-child {
+  margin-left: 32px;
+}
+
+.elements_two-inner div:last-child {
+  margin-right: 0;
+}
+/* Element-two */
+
+/* Stages */
+
+/* Footer */
+
+/* footer {
+  padding: 150px 0 20px 0;
+}
+
+.footer-col h4 {
+  margin-bottom: 30px;
+}
+
+.footer_top {
+  display: flex;
+  padding-bottom: 127px;
+}
+
+.footer-col:first-child {
+  margin-right: 103px;
+}
+
+.footer-col p {
+  margin-bottom: 15px;
+}
+
+.footer-col address {
+  font-style: normal;
+}
+
+.footer_top .form-item {
+  max-width: 445px;
+  margin-right: 0;
+}
+
+.footer_top .form-item:first-child {
+  margin-bottom: 10px;
+}
+
+.footer_top .form-checkbox {
+  margin-top: 21px;
+  margin-bottom: 48px;
+}
+
+.footer-flex {
+  display: flex;
+  margin-bottom: 38px;
+  align-items: flex-start;
+}
+
+.footer-item {
+  background: #2b59c3;
+  margin-right: 30px;
+  width: 25%;
+  border-radius: 10px;
+  padding: 6px 4px 16px 10px;
+}
+
+.footer-item:last-child {
+  margin-right: 0;
+}
+
+.footer-item .text {
+  color: #ffffff;
+}
+
+.footer-content {
+  font-family: "20 Kopeek", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-top: 25px;
+} */
+/* Footer */
