@@ -191,9 +191,12 @@ header {
   justify-content: space-between;
 }
 
-.img {
-  margin-right: 30px;
+.img{
   display: block;
+}
+
+.style-img {
+  margin-right: 30px;
 }
 
 .text {
@@ -268,7 +271,6 @@ header {
 .elements-content {
   font-family: "20 Kopeek", sans-serif;
   display: block;
-  margin-top: 16px;
   font-size: 15px;
   line-height: 19px;
 }
@@ -283,10 +285,6 @@ header {
 }
 .price-text {
   margin: 55px 82px 0 0;
-}
-
-.price-img {
-  margin: 0;
 }
 
 .price-text p:first-child {
@@ -353,6 +351,10 @@ header {
 
 .guideline-item {
   display: flex;
+}
+
+.guideline-img{
+  margin-right: 30px;
 }
 
 .guideline-text p:first-child {
@@ -630,12 +632,17 @@ footer {
   margin-top: 25px;
 }
 
+.footer-content span{
+  display: inline-block;
+  margin-top: 6px;
+}
+
 /* Footer */
 
 /* Media */
 
 
-@media only screen and (max-width: 991px)
+@media only screen and (max-width: 992px)
 {
 
   /* Header */
@@ -666,6 +673,7 @@ footer {
 
   .intro {
     padding: 301px 0 0 0;
+    background-position: -900px;
   }
   
   .intro-title {
@@ -694,6 +702,22 @@ footer {
 
 .style-inner {
   padding-bottom: 120px;
+}
+
+.text-style {
+  margin-top: 0;
+}
+
+.text-style p:first-child {
+  margin-bottom: 15px;
+}
+
+.style-img{
+  min-width: 450px;
+}
+
+.img{
+  width: 100%;
 }
 
 .subtitle {
@@ -747,7 +771,20 @@ footer {
 
 .price-text span {
   padding: 9px 15px;
-  margin: 20px 0 -9px -15px;
+  margin: 10px 0 -9px -15px;
+}
+
+.price-text {
+  margin: 45px 30px 0 0;
+}
+
+.price-text p:first-child {
+  margin-bottom: 10px;
+}
+
+.price-img
+{
+  min-width: 530px;
 }
 
 /* Price */
@@ -786,6 +823,10 @@ footer {
 
 .guideline-text p:first-child {
   margin-bottom: 20px;
+}
+
+.guideline-img{
+ min-width: 530px;
 }
 
 .guideline-text {
@@ -875,12 +916,396 @@ footer {
 
 /* Stages */
 
+/* Element-two */
 
+.element-two {
+  padding: 97px 0 60px 0;
+  background-position: center;
+}
+
+.elemenents-title {
+  margin-top: 94px;
+}
+
+.elements-content{
+  margin-top: 0;
+}
+
+/* Element-two */
+
+/* Footer */
+
+footer {
+  padding: 100px 0 20px 0;
+}
+
+.footer_top {
+  padding-bottom: 120px;
+}
+
+.footer-col:first-child {
+  margin-right: 63px;
+}
+
+.footer_top .form-item {
+  max-width: 370px;
+  width: 100%;
+}
+
+.footer_top .form-checkbox {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.footer-flex {
+  margin-bottom: 30px;
+}
+
+.footer-item {
+  margin-top: 16px;
+}
+
+.footer-content {
+  font-family: "20 Kopeek", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-top: 27px;
+}
+
+.footer-content span{
+  display: inline-block;
+  margin-top: 18px;
+}
+
+/* Footer */
 
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 768px)
 {
+/* Header */
+
+header {
+  padding-top: 27px;
+}
+
+.container {
+  max-width: 690px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.header-actions{
+  display: none;
+}
+
+/* Header */
+
+/* Intro */
+
+.intro {
+  background-image: url(../images/intro_767px.jpg);
+  padding: 307px 0 0 0;
+  min-height: 1024px;
+  background-position: center;
+}
+
+.intro-content{
+  display: flex;
+  flex-flow: column;
+}
+
+.intro-content a:last-child{
+  margin-top: 42px;
+}
+
+.intro-title {
+  color: #ffffff;
+}
+
+.intro-subtitle {
+  color: #ffffff;
+  margin-bottom: 75px;
+}
+
+.intro-content a{
+  width: 32%;
+}
+
+.btn {
+  margin-right: 0;
+}
+
+/* Intro */
+
+/* Style */
+
+.style {
+  padding: 100px 0 120px 0;
+}
+
+.style-item {
+  display: flex;
+  flex-flow: column;
+}
+
+.style-item div{
+  width: 65%;
+}
+
+.style-img {
+  margin: 0 0 30px 0;
+}
+
+/* Style */
+
+/* Elements */
+
+.elements-inner {
+  flex-wrap: wrap;
+}
+
+.elements-inner div{
+  margin-right: 0;
+  padding-right: 100px;
+}
+
+.item-one, .item-two, .item-three, .item-four{
+  width: 31%;
+}
+
+.item-one, .item-four {
+  margin-left: 34px;
+}
+
+.item-five {
+  width: 60%;
+}
+
+.elemenents-title {
+  margin-top: 43px;
+}
+
+/* Elements */
+
+/* Price */
+
+.price-inner {
+  flex-flow: column;
+}
+
+.price-img
+{
+  min-width: 689px;
+}
+
+.price-text {
+  order: 2;
+  margin: 25px 0 0 0;
+  width: 80%;
+}
+
+.price-text span {
+  padding: 13px 17px;
+  margin: 20px -29px -13px -17px;
+}
+
+/* Price */
+
+/* Brand */
+
+.brand {
+  padding-bottom: 170px;
+}
+
+.brand-content {
+  margin-top: 25px;
+}
+
+.brand-title {
+  margin-right: 70px;
+}
+
+.btn-big {
+  margin: 0 0 0 235px;
+}
+
+/* Guideline */
+
+.guideline-inner {
+  padding-bottom: 69px;
+}
+
+.guideline-item {
+  flex-flow: column;
+  width: 65%;
+}
+
+.guideline-img img{
+  display: none;
+}
+
+.guideline-img{
+  background-image: url(../images/guideline_767px.jpg);
+  background-repeat: no-repeat;
+  margin-right: 0;
+  height: 450px;
+  width: 100%;
+  margin-bottom: -130px;
+}
+
+.guideline-text {
+  padding: 11px 20px 13px 15px;
+  margin: 0 -20px 22px -15px;
+}
+
+/* Guideline */
+
+/* Form */
+
+.form-subtitle {
+  margin-bottom: 15px;
+}
+
+.form-flex {
+  margin: 30px 0 21px 0;
+  flex-flow: column;
+}
+
+.form-item {
+  margin-right: 0;
+  min-width: 450px;
+}
+
+.form-flex div:first-child{
+  margin-bottom: 20px;
+}
+
+.form-flex button{
+  top: 215px;
+}
+
+
+/* Form */
+
+/* Brand */
+
+/* Stages */
+
+.stages-inner {
+  padding-bottom: 90px;
+}
+
+.stages-inner h2 {
+  margin-bottom: 40px;
+}
+
+.stages-item {
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.stages-col {
+  margin-right: 0;
+  width: 26%;
+}
+
+.firsr-col {
+  margin-right: 0;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.stages-col img {
+  margin-bottom: 17px;
+}
+
+.stages-col:last-child {
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+/* Element-two */
+
+.elements_two-inner {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.element-two {
+  padding: 32px 0 21px 0;
+}
+
+.element {
+  margin-right: 0;
+  width: 23%;
+}
+
+.elements_two-inner .element:nth-child(4){
+  margin-left: 35px;
+}
+
+.elements_two-inner .element:last-child{
+  width: 59%;
+  padding-right: 40px;
+}
+
+.elemenents-title {
+  margin-top: 64px;
+}
+
+.elements_two-inner div:first-child {
+  margin-left: 35px;
+}
+
+/* Element-two */
+
+/* Stages */
+
+/* Footer */
+
+footer {
+  padding: 120px 0 20px 0;
+}
+
+.footer_top {
+  flex-flow: column;
+}
+
+.footer_top .footer-col:last-child{
+  margin-top: 61px;
+}
+
+.footer-col:first-child {
+  margin-right: 0;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  width: 32%;
+  margin-right: 20px;
+  margin-top: 31px;
+}
+
+.footer-bottom h4{
+  margin-bottom: 0;
+}
+
+/* Footer */
+
+
+
+
 
 }
 
