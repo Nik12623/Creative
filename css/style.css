@@ -28,6 +28,9 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  font-weight: normal;
+  font-family: "20 Kopeek", sans-serif;
+
 }
 
 /* Header */
@@ -57,11 +60,11 @@ header {
 .logo {
   display: inline-block;
   margin-right: 22px;
+  animation-name: scale;
+  animation-duration: 1s;
 }
 
 .logo-text {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 19px;
   color: #ffffff;
@@ -73,12 +76,11 @@ header {
 }
 
 .action-link {
-  font-family: "20 Kopeek", sans-serif;
   display: inline-block;
   border: 1px solid #ffffff;
   text-decoration: none;
   font-size: 16px;
-  font-weight: normal;
+  
   color: #ffffff;
   cursor: pointer;
 }
@@ -112,6 +114,54 @@ header {
   transition: background-color 0.2s linear, color 0.2s linear;
 }
 
+.nav-toggle {
+  display: none;
+  width: 30px;
+  padding: 9px 0;
+  position: absolute;
+  top: 36px;
+  right: 39px;
+  z-index: 1;
+  font-size: 0;
+  color: transparent;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-toggle__item {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #181818;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transition: background-color 0.2s linear;
+}
+
+.nav-toggle__item:before, .nav-toggle__item:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #181818;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transition: transform 0.2s linear;
+}
+
+.nav-toggle__item:before{
+  top: -8px;
+}
+
+.nav-toggle__item:after{
+  bottom: -8px;
+}
+
 /* Header */
 
 /* Intro */
@@ -125,8 +175,6 @@ header {
 }
 
 .intro-title {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 55px;
   line-height: 100%;
   color: #181818;
@@ -134,7 +182,6 @@ header {
 }
 
 .intro-subtitle {
-  font-family: "20 Kopeek", sans-serif;
   font-size: 34px;
   line-height: 110%;
   color: #181818;
@@ -142,10 +189,8 @@ header {
 }
 
 .btn {
-  font-family: "20 Kopeek", sans-serif;
   text-decoration: none;
   display: inline-block;
-  font-weight: normal;
   font-size: 18px;
   line-height: 140%;
   color: #181818;
@@ -179,8 +224,6 @@ header {
 
 .subtitle {
   margin-bottom: 15px;
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 38px;
   line-height: 110%;
   color: #181818;
@@ -200,8 +243,6 @@ header {
 }
 
 .text {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: 140%;
   color: #181818;
@@ -220,8 +261,6 @@ header {
 /* Elements */
 
 .title {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 50px;
   line-height: 100%;
   color: #181818;
@@ -256,8 +295,6 @@ header {
 }
 
 .elemenents-title span {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 55px;
   line-height: 100%;
   color: #181818;
@@ -269,7 +306,6 @@ header {
 }
 
 .elements-content {
-  font-family: "20 Kopeek", sans-serif;
   display: block;
   font-size: 15px;
   line-height: 19px;
@@ -360,12 +396,13 @@ header {
 .guideline-text p:first-child {
   margin-bottom: 20px;
 }
+
 .guideline-text {
   background-color: #2b59c3;
   border-radius: 5px;
   color: #ffffff;
-  padding: 11px 39px 11px 14px;
-  margin: 0 -14px 22px -14px;
+  padding: 11px 11px 11px 14px;
+  margin: 0 0 22px -14px;
 }
 
 .guideline-text span {
@@ -384,8 +421,6 @@ header {
 }
 
 .middle-text {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 26px;
   line-height: 110%;
   color: #181818;
@@ -413,16 +448,12 @@ header {
   border-radius: 10px;
   padding: 27px 29px 27px 29px;
   outline: none;
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: 140%;
   color: #868686;
 }
 
 .form-item input::placeholder {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: 140%;
   color: #868686;
@@ -443,8 +474,6 @@ header {
 }
 
 .form-checkbox label {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: 140%;
   color: #181818;
@@ -458,13 +487,11 @@ header {
 }
 
 .form-checkbox a {
-  font-family: "20 Kopeek", sans-serif;
   font-size: 18px;
   line-height: 140%;
   color: #2b59c3;
   display: inline-block;
   text-decoration: none;
-  font-weight: normal;
   cursor: pointer;
 }
 
@@ -514,8 +541,6 @@ header {
 }
 
 .stages-content {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 19px;
   color: #181818;
@@ -624,8 +649,6 @@ footer {
 }
 
 .footer-content {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 19px;
   color: #ffffff;
@@ -673,7 +696,7 @@ footer {
 
   .intro {
     padding: 301px 0 0 0;
-    background-position: -900px;
+    background-position: center;
   }
   
   .intro-title {
@@ -749,7 +772,7 @@ footer {
 }
 
 .item-four {
-  margin-right: 115px;
+  margin-right: 75px;
 }
 
 .item-five {
@@ -776,15 +799,15 @@ footer {
 
 .price-text {
   margin: 45px 30px 0 0;
+  width: 41%;
+}
+
+.price-photo{
+  width: 59%;
 }
 
 .price-text p:first-child {
   margin-bottom: 10px;
-}
-
-.price-img
-{
-  min-width: 530px;
 }
 
 /* Price */
@@ -831,7 +854,7 @@ footer {
 
 .guideline-text {
   padding: 14px 5px 13px 12px;
-  margin: 0 -5px 29px -12px;
+  margin: 0 0 29px -12px;
 }
 
 .guideline-text span {
@@ -858,8 +881,8 @@ footer {
 
 .form-item {
   max-width: 450px;
-  width: 48%;
   margin-right: 0;
+  width: 100%;
 }
 
 .form-item input {
@@ -879,6 +902,7 @@ footer {
   position: absolute;
   top: 135px;
   left: 0px;
+  z-index: 1;
 }
 
 /* Form */
@@ -917,6 +941,12 @@ footer {
 /* Stages */
 
 /* Element-two */
+
+.element {
+  margin-right: 40px;
+  color: #ffffff;
+  width: 16%;
+}
 
 .element-two {
   padding: 97px 0 60px 0;
@@ -966,8 +996,6 @@ footer {
 }
 
 .footer-content {
-  font-family: "20 Kopeek", sans-serif;
-  font-weight: normal;
   font-size: 15px;
   line-height: 19px;
   color: #ffffff;
@@ -1003,6 +1031,10 @@ header {
   display: none;
 }
 
+.nav-toggle {
+  display: block;
+}
+
 /* Header */
 
 /* Intro */
@@ -1010,8 +1042,8 @@ header {
 .intro {
   background-image: url(../images/intro_767px.jpg);
   padding: 307px 0 0 0;
-  min-height: 1024px;
   background-position: center;
+  min-height: 1024px;
 }
 
 .intro-content{
@@ -1033,7 +1065,7 @@ header {
 }
 
 .intro-content a{
-  width: 32%;
+  width: 34%;
 }
 
 .btn {
@@ -1098,15 +1130,14 @@ header {
   flex-flow: column;
 }
 
-.price-img
-{
-  min-width: 689px;
-}
-
 .price-text {
   order: 2;
   margin: 25px 0 0 0;
   width: 80%;
+}
+
+.price-photo {
+  width: auto;
 }
 
 .price-text span {
@@ -1138,6 +1169,7 @@ header {
 
 .guideline-inner {
   padding-bottom: 69px;
+  padding-top: 19px;
 }
 
 .guideline-item {
@@ -1146,6 +1178,7 @@ header {
 }
 
 .guideline-img img{
+  width: 10px;
   display: none;
 }
 
@@ -1153,14 +1186,18 @@ header {
   background-image: url(../images/guideline_767px.jpg);
   background-repeat: no-repeat;
   margin-right: 0;
-  height: 450px;
+  height: 302px;
   width: 100%;
-  margin-bottom: -130px;
+  margin-bottom: 15px;
+}
+
+.guideline-img {
+  min-width:initial;
 }
 
 .guideline-text {
   padding: 11px 20px 13px 15px;
-  margin: 0 -20px 22px -15px;
+  margin: 0 0 22px -15px;
 }
 
 /* Guideline */
@@ -1178,7 +1215,6 @@ header {
 
 .form-item {
   margin-right: 0;
-  min-width: 450px;
 }
 
 .form-flex div:first-child{
@@ -1286,8 +1322,6 @@ footer {
 }
 
 .footer-flex {
-  display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -1303,20 +1337,560 @@ footer {
 
 /* Footer */
 
+}
+
+@media only screen and (max-width: 576px)
+{
+  
+/* Header */
+
+.container {
+  max-width: 510px;
+}
 
 
+.logo-text {
+  font-size: 12px;
+  line-height: 16px;
+}
 
+/* Header */
+
+/* Intro */
+
+.intro {
+  background-image: url(../images/intro_575.jpg);
+  padding: 148px 0 0 0;
+  min-height: 496px;
+}
+
+.intro-content{
+  display: block;
+  width: auto;
+}
+
+.intro-content a{
+  padding: 14.5px 40px;
+  margin-right: 15px;
+}
+
+.intro-content a{
+  width: auto;
+}
+
+.intro-content a:last-child {
+  margin-top: 0;
+}
+
+.intro-title {
+  font-size: 30px;
+  line-height: 110%;
+  margin-bottom: 15px;
+}
+
+.intro-subtitle {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  font-size: 15px;
+  padding: 14.5px 47px;
+  margin-right: 25px;
+}
+
+/* Intro */
+
+/* Style */
+
+.style {
+  padding: 92px 0 85px 0;
+}
+
+.style-inner {
+  padding-bottom: 90px;
+}
+
+.subtitle {
+  font-size: 32px;
+}
+
+.style-item div:first-child {
+  width: 100%;
+}
+
+.text {
+  font-size: 15px;
+}
+
+.style-img {
+  min-width: initial;
+}
+
+/* Style */
+
+/* Elements */
+
+.title {
+  font-size: 35px;
+}
+
+.elements-inner {
+  display: block;
+  padding-bottom: 71px;
+}
+
+.elements-inner div{
+  margin-left: 105px;
+  padding-right: 100px;
+  width: 50%;
+}
+
+.elements-inner div:last-child{
+  width: 70%;
+}
+
+.elemenents-title {
+  margin-top: 50px;
+}
+
+.item-four p{
+  margin-top: 35px;
+}
+
+.elemenents-title span {
+  font-size: 35px;
+  top: -14px;
+  left: -105px;
+}
+
+.elements-content {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Elements */
+
+/* Price */
+
+.price-text {
+  margin: 20px 0 0 0;
+}
+
+.price-text {
+  width: 74%;
+}
+
+.price-text span {
+  padding: 10px 15px;
+  margin: 20px -41px -10px -15px;
+}
+
+/* Price */
+
+/* Brand */
+
+.brand {
+  padding-bottom: 170px;
+}
+
+.brand-content {
+  margin-top: 34px;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.brand-title {
+  margin-right: 0;
+}
+
+.brand-text {
+  margin-bottom: 50px;
+}
+
+.btn-big {
+  font-size: 20px;
+  padding: 19.5px 47px;
+  margin: 0px 0 0 165px;
+}
+
+.brand-item{
+  padding-bottom: 50px;
+}
+
+/* Guideline */
+.guideline-img {
+  background-image: url(../images/guideline_575px.jpg);
+  height: 308px;
+  margin-bottom: 15px;
+}
+
+.guideline-item {
+  width: 100%;
+}
+
+.guideline-item .text{
+  width: 85%;
+}
+
+.guideline-inner {
+  padding-bottom: 100px;
+}
+
+.guideline-text {
+  padding: 9px 40px 14px 17px;
+  margin: 0 0 14px -17px;
+}
+
+/* Guideline */
+
+/* Form */
+
+.form-subtitle {
+  margin-bottom: 16px;
+}
+
+.form-flex {
+  margin: 19px 0 11px 0;
+}
+
+.form-flex div:first-child {
+  margin-bottom: 10px;
+}
+
+.form-item{
+  max-width: 380px;
+}
+
+.form-item input {
+  font-size: 15px;
+}
+
+.form-item input::placeholder {
+  font-size: 15px;
+}
+
+.form-checkbox label {
+  font-size: 15px;
+}
+
+.form-checkbox a {
+  font-size: 15px;
+}
+
+.form-flex button {
+  top: 190px;
+}
+/* Form */
+
+/* Element-two */
+
+.element-two{
+  display: none;
+}
+
+/* Element-two */
+
+/* Stages */
+
+.stages-content {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Stages */
+
+/* Footer */
+
+footer {
+  padding: 0 0 20px 0;
+}
+
+.footer_top {
+  padding-bottom: 90px;
+}
+
+.footer-flex {
+  margin-bottom: 45px;
+}
+
+.footer-item {
+  width: 44%;
+  padding: 6px 4px 16px 10px;
+  min-width: 280px;
+}
+
+/* Footer */
 
 }
 
-@media only screen and (max-width: 575px)
+@media only screen and (max-width: 360px)
 {
   
+/* Header */
+
+.container {
+  max-width: 290px;
 }
 
-@media only screen and (max-width: 359px)
-{
-  
+.header-item {
+  width: 85%;
+}
+
+.nav-toggle {
+  top: 36px;
+  right: 35px;
+}
+/* Header */
+
+/* Intro */
+
+.intro {
+  background-image: url(../images/intro_360.jpg);
+  min-height: 640px;
+  padding: 145px 0 0 0;
+}
+
+.intro-subtitle {
+  margin-bottom: 40px;
+}
+
+.btn {
+  margin-right: 0;
+}
+
+.intro-content{
+  display: flex;
+  flex-flow: column;
+}
+
+.intro-content a{
+  width: fit-content;
+}
+
+.intro-title{
+  order: 1;
+}
+
+.intro-subtitle{
+  order: 2;
+  width: 70%;
+}
+
+.intro-content a:last-child {
+  order: 3;
+}
+
+.intro-content a:first-of-type {
+  order: 4;
+  margin-top: 34px;
+}
+
+/* Intro */
+
+/* Style */
+
+.style {
+  padding: 56px 0 101px 0;
+}
+
+.style-img {
+  min-width: initial;
+}
+
+.style-item div {
+  width: 100%;
+}
+
+/* Style */
+
+/* Elements */
+
+.elements-inner {
+  padding-bottom: 140px;
+}
+
+.elements-inner div {
+  width: 70%;
+  padding-right: 0;
+  margin-left: 85px;
+}
+
+.elements-inner div:last-child {
+  width: 70%;
+}
+
+.elemenents-title span {
+  left: -85px;
+}
+/* Price */
+
+.price-text {
+  width: 100%;
+}
+
+.price-text span {
+  padding: 13px 13px;
+  margin: 13px -13px -13px -13px;
+}
+
+/* Price */
+
+/* Brand */
+
+.brand {
+  padding-bottom: 181px;
+}
+
+.brand-content {
+  margin-top: 15px;
+  margin-bottom: 11px;
+  position: relative;
+}
+
+.brand-item {
+  padding-bottom: 140px;
+}
+
+.btn-brand {
+  position: absolute;
+  z-index: 1;
+  top: 120px;
+  left: 0px;
+}
+
+.brand-text {
+  margin-bottom: 170px;
+}
+
+.btn-big {
+  margin: 0 0 0 35px;
+}
+
+/* Guideline */
+
+.guideline-inner {
+  padding-bottom: 90px;
+  padding-top: 0;
+}
+
+.guideline-img {
+  background-image: url(../images/guideline_360px.jpg);
+  height: 174px;
+  margin-bottom: 26px;
+}
+
+.guideline-item {
+  width: 100%;
+}
+
+.guideline-text{
+  padding: 8px 15px 9px 17px;
+  margin: 0 0 24px -17px;
+}
+
+/* Guideline */
+
+/* Form */
+
+.form-flex button {
+  top: 215px;
+}
+
+.form-item{
+  max-width: 290px;
+}
+
+
+/* Form */
+
+/* Brand */
+
+/* Stages */
+
+.stages-inner h2 {
+  margin-bottom: 35px;
+}
+
+.stages-item{
+  margin-bottom: 65px;
+}
+
+.stages-col {
+  width: 45%;
+}
+
+.firsr-col{
+  width: 100%;
+}
+
+.firsr-col img{
+  width: 21%;
+}
+
+.stages-col img {
+  margin-bottom: 13px;
+}
+
+.stages-col:last-child {
+  margin-top: 26px;
+  margin-right: 0;
+}
+
+/* Stages */
+
+/* Footer */
+
+.footer-item {
+  width: 100%;
+  padding: 6px 85px 16px 10px;
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+.footer-item:first-child{
+  margin-top: 30px;
+}
+
+/* Footer */
 }
 
 /* Media */
+
+
+.intro-content{
+  animation: move 2s;
+}
+
+@keyframes move {
+  0%{
+    transform: translateY(-5vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.logo{
+  animation: logo_move 0.5s;
+}
+
+@keyframes logo_move {
+  0%{
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
