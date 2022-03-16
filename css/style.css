@@ -696,6 +696,7 @@ footer {
 
   .intro {
     padding: 301px 0 0 0;
+    min-height: 768px;
     background-position: center;
   }
   
