@@ -1395,7 +1395,7 @@ footer {
 
 .btn {
   font-size: 15px;
-  padding: 14.5px 47px;
+  padding: 14.5px 33px;
   margin-right: 25px;
 }
 
@@ -1510,7 +1510,7 @@ footer {
 
 .btn-big {
   font-size: 20px;
-  padding: 19.5px 47px;
+  padding: 19.5px 33px;
   margin: 0px 0 0 165px;
 }
 
@@ -1757,6 +1757,11 @@ footer {
   z-index: 1;
   top: 120px;
   left: 0px;
+  padding: 14.5px 33px;
+}
+
+.brand-content.btn.btn-brand{
+  padding: 14.5px 33px;
 }
 
 .brand-text {
